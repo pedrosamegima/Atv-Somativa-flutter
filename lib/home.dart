@@ -47,22 +47,34 @@ class _HomePageState extends State<Home> {
                   ElevatedButton(
                       child: const Text("IMC"),
                       onPressed: () {
-                      Navigator.pushNamed(context, '/imc');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context)=> const Imc()));
                       }),
                   ElevatedButton(
                       child: const Text("Contador"),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/contador');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context)=> const Cont()));
                       }),
                   ElevatedButton(
                       child: const Text("Cadastro Usuario"),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/CadastroUser');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context)=> const CadastroUser()));
                       }),
                   ElevatedButton(
                       child: const Text("Cadastro de produtos"),
                       onPressed: () {
-                       Navigator.pushNamed(context, '/CadastroProduto');
+                       Navigator.push(
+                       context,
+                       MaterialPageRoute(
+                           builder: (context)=> const CadastroProduto()));
                       }),
                 ]),
           ],
