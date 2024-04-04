@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:atv_formativa/CadastroUser.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,18 +29,16 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class Contador extends StatefulWidget {
-  const Contador({super.key, required this.title});
+class Cont extends StatefulWidget {
+  const Cont({super.key});
 
-
-
-  final String title;
+ // final String title;
 
   @override
-  State<Contador> createState() => _ContadorPageState();
+  State<Cont> createState() => _ContPageState();
 }
 
-class _ContadorPageState extends State<Contador> {
+class _ContPageState extends State<Cont> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -66,7 +63,7 @@ class _ContadorPageState extends State<Contador> {
 
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
-        title: Text(widget.title),
+        title: Text("Texto teste"),
       ),
       body: Center(
         child: Column(
